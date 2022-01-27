@@ -2,15 +2,15 @@
 Gaming multi distribution with Flatpak And AppImage.
 
  ## You need:
-- #{Wget} = https://www.gnu.org/software/wget/ 
+- #{Flatpak} = https://flatpak.org/setup/
+- #{AppImagelauncher} = https://github.com/curl/curl (WorkinProgress)
+- #{curl} = https://github.com/curl/curl
 - #{Git} = https://git.kernel.org/pub/scm/git/git.git 
   ## Process:
 ```bash
 curl https://raw.githubusercontent.com/KyLinuxOS/Gaming-Flatpak/main/install.sh | bash
 ```
  ## Sources:
-- https://flatpak.org/setup/
-
 - https://github.com/flathub/com.valvesoftware.Steam
 - https://github.com/GloriousEggroll/proton-ge-custom
 - https://github.com/DavidoTek/ProtonUp-Qt
