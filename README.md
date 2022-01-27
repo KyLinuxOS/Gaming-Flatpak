@@ -7,9 +7,9 @@ Gaming multi distribution with Flatpak And AppImage.
   ## Process:
 ```bash
 git clone https://github.com/KyLinuxOS/Gaming-Flatpak.git
-AppImage-Alpha.sh
-chmod +x ./Gaming-Flatpak-AppImage-Alpha.sh
-./Gaming-Flatpak-AppImage-Alpha.sh
+install.sh
+chmod +x ./install.sh
+./install.sh
 ```
  ## Sources:
 - https://flatpak.org/setup/
