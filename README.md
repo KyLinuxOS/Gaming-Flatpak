@@ -13,6 +13,7 @@ chmod +x ./Gaming-Flatpak-AppImage-Alpha.sh
 ```
  ## Sources:
 - https://flatpak.org/setup/
+
 - https://github.com/flathub/com.valvesoftware.Steam
 - https://github.com/GloriousEggroll/proton-ge-custom
 - https://github.com/DavidoTek/ProtonUp-Qt
