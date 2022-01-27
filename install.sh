@@ -2,6 +2,7 @@
 
 set -e
 #AppImage
+cd ..
 mkdir -p AppImage
 
 #Depots flatapk
