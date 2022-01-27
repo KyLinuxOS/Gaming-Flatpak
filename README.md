@@ -7,7 +7,7 @@ Gaming multi distribution with Flatpak And AppImage.
 - https://git.kernel.org/pub/scm/git/git.git 
   ## Process:
 ```bash
-git clone https://github.com/KyLinuxOS/Meta-Flatpak-Gaming/blob/main/Gaming-Flatpak
+git clone https://github.com/KyLinuxOS/Gaming-Flatpak.git
 AppImage-Alpha.sh
  chmod +x ./Gaming-Flatpak-AppImage-Alpha.sh
  ./Gaming-Flatpak-AppImage-Alpha.sh
