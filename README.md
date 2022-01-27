@@ -1,4 +1,4 @@
-## Flatapk and Cie for gaming with fun.
+## Flatapk and Cie for gaming with fun. [ALPHA]
 Gaming multi distribution with Flatpak And AppImage.
 
  ## You need:
