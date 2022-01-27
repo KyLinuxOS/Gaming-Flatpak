@@ -2,9 +2,9 @@
 Gaming multi distribution with Flatpak And AppImage.
 
  ## You need:
-- ## " Wget "
+- ## {Wget}
 - https://www.gnu.org/software/wget/ 
-- ## "Git"
+- ## {Git}
 - https://git.kernel.org/pub/scm/git/git.git 
 - 
   ## Process:
