@@ -1,9 +1,6 @@
 #!/bin/bash
 
 set -e
-#AppImage
-cd ..
-mkdir -p AppImage
 
 #Depots flatapk
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -19,7 +16,7 @@ progams=(
     "Flatseal"
     "Mangohud"
     "Discord"
-    "AppImageLauncher"
+#    "AppImageLauncher"
     "HeroicGameLauncher"
     "OpenRGB"
 )
@@ -60,30 +57,25 @@ flatpak install flathub com.discordapp.Discord
 }
 
 
-AppImageLauncher() {
- echo "Installation de AppImageLauncher"
- cd AppImage
- wget -N https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-lite-2.2.0-travis995-0f91801-x86_64.AppImage
- chmod +x ./appimagelauncher-lite-2.2.0-travis995-0f91801-x86_64.AppImage
- cd ..
+##AppImageLauncher() {
+# echo "Installation de AppImageLauncher"
+# mkdir -p $HOME/AppImage
+# curl -o $HOME/AppImage/appimagelauncher https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-lite-2.2.0-travis995-0f91801-x86_64.AppImage
 }
 
 HeroicGameLauncher() {
  echo "Installation de HeroicGameLauncher"
- cd AppImage
- wget -N https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.1.0/Heroic-2.1.0.AppImage
- chmod +x ./Heroic-2.1.0.AppImage
- cd ..
+ mkdir -p $HOME/AppImage
+ curl -o $HOME/AppImage/Heroic-2.1.0.AppImage https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.1.0/Heroic-2.1.0.AppImage
 }
 
 OpenRGB() {
  echo "Installation de OpenRGB"
- cd AppImage
- wget -N https://gitlab.com/CalcProgrammer1/OpenRGB/-/jobs/artifacts/master/download?job=Linux+64+AppImage
- unzip download?job=Linux+64+AppImage
- chmod +x ./OpenRGB-x86_64.AppImage
- cd ..
+ mkdir -p $HOME/AppImage
+ curl -o $HOME/AppImage/OpenRGB.AppImage https://gitlab.com/CalcProgrammer1/OpenRGB/-/jobs/artifacts/master/download?job=Linux+64+AppImage 
 }
+
+echo "### installation complete"
 
 # auto select all
 for i in ${!progams[@]}; do
@@ -98,8 +90,6 @@ menu() {
     done
     [[ "$msg" ]] && echo "$msg"; :
 }
-
-echo "### installation complete"
 
 prompt="Choisir un programme (choisir à nouveau pour l'enlever, ENTREE quand ok) : "
 
