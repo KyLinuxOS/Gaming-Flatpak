@@ -1,10 +1,12 @@
 ## Flatapk and Cie for gaming with fun.
 Gaming multi distribution with Flatpak And AppImage.
+
  ## You need:
 - ## " Wget "
 - https://www.gnu.org/software/wget/ 
 - ## "Git"
 - https://git.kernel.org/pub/scm/git/git.git 
+- 
   ## Process:
 ```bash
 git clone https://github.com/KyLinuxOS/Gaming-Flatpak.git
