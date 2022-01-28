@@ -61,7 +61,7 @@ flatpak install flathub com.discordapp.Discord
 # echo "Installation de AppImageLauncher"
 # mkdir -p $HOME/AppImage
 # curl -o $HOME/AppImage/appimagelauncher https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-lite-2.2.0-travis995-0f91801-x86_64.AppImage
-}
+#}
 
 HeroicGameLauncher() {
  echo "Installation de HeroicGameLauncher"
