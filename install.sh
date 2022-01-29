@@ -20,9 +20,9 @@ progams=(
     "Flatseal"
     "Mangohud"
     "Discord"
-#    "AppImageLauncher"
-    "HeroicGameLauncher"
     "OpenRGB"
+    "AppImageLauncher"
+    "HeroicGameLauncher"
 )
 
 Steam() {
@@ -60,12 +60,16 @@ Discord() {
 flatpak install flathub com.discordapp.Discord
 }
 
+OpenRGB() {
+ echo "Installation de OpenRGB"
+flatpak install flathub org.openrgb.OpenRGB
+}
 
-##AppImageLauncher() {
-# echo "Installation de AppImageLauncher"
-# mkdir -p $HOME/AppImage
-# curl -o $HOME/AppImage/appimagelauncher https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-lite-2.2.0-travis995-0f91801-x86_64.AppImage
-# }
+AppImageLauncher() {
+ echo "Installation de AppImageLauncher"
+ mkdir -p $HOME/AppImage
+ curl -o $HOME/AppImage/appimagelauncher https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-lite-2.2.0-travis995-0f91801-x86_64.AppImage
+}
 
 HeroicGameLauncher() {
  echo "Installation de HeroicGameLauncher"
@@ -73,11 +77,6 @@ HeroicGameLauncher() {
  curl -o $HOME/AppImage/Heroic-2.1.0.AppImage https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.1.0/Heroic-2.1.0.AppImage
 }
 
-OpenRGB() {
- echo "Installation de OpenRGB"
- mkdir -p $HOME/AppImage
- curl -o $HOME/AppImage/OpenRGB.AppImage https://gitlab.com/CalcProgrammer1/OpenRGB/-/jobs/artifacts/master/download?job=Linux+64+AppImage 
-}
 
 echo "### installation complete"
 
