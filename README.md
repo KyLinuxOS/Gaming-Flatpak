@@ -1,9 +1,8 @@
-## Flatpak and Cie for gaming with fun. [ALPHA]
-Gaming multi distribution with Flatpak And AppImage.
+## Flatpak and Cie for gaming with fun. [BETA]
+Gaming multi distribution with Flatpak.
 
  ## You need:
 - #{Flatpak} = https://flatpak.org/setup/
-- #{AppImagelauncher} = https://github.com/curl/curl (WorkinProgress)
 - #{curl} = https://github.com/curl/curl
 - #{Git} = https://git.kernel.org/pub/scm/git/git.git 
   ## Process:
@@ -18,6 +17,8 @@ curl https://raw.githubusercontent.com/KyLinuxOS/Gaming-Flatpak/main/install.sh 
 - https://github.com/tchx84/Flatseal
 - https://github.com/flightlessmango/MangoHud
 - https://github.com/flathub/com.discordapp.Discord
-- https://github.com/TheAssassin/AppImageLauncher
-- https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher
 - https://gitlab.com/CalcProgrammer1/OpenRGB
+- https://www.spotify.com/fr/
+- https://kdenlive.org/fr/
+- https://obsproject.com/
+- https://gitlab.com/leinardi/gst
