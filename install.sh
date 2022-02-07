@@ -8,7 +8,7 @@ flatpak remote-add --if-not-exists --user flathub-beta https://flathub.org/beta-
 flatpak update --appstream
 
 #Dépendances
-#flatpak install org.gnome.Platform/x86_64/41
+flatpak install org.gnome.Platform/x86_64/41
 
 # program list
 
