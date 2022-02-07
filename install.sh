@@ -11,18 +11,6 @@ flatpak update --appstream
 flatpak install org.gnome.Platform/x86_64/41
 
 # program list
-progams=(
-    "Steam"
-    "ProtonGe"
-    "PorotonUP-QT"
-    "Lutris"
-    "Flatseal"
-    "Mangohud"
-    "Discord"
-    "OpenRGB"
-    "AppImageLauncher"
-    "HeroicGameLauncher"
-)
 
 Steam() {
   echo "Installation de steam"
@@ -64,59 +52,24 @@ OpenRGB() {
 flatpak install flathub org.openrgb.OpenRGB
 }
 
-AppImageLauncher() {
- echo "Installation de AppImageLauncher"
- mkdir -p $HOME/AppImage
- curl -o $HOME/AppImage/appimagelauncher https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-lite-2.2.0-travis995-0f91801-x86_64.AppImage
+Spotify() {
+ echo "Installation de Spotify"
+flatpak install flathub com.spotify.Client
 }
 
-HeroicGameLauncher() {
- echo "Installation de HeroicGameLauncher"
- mkdir -p $HOME/AppImage
- curl -o $HOME/AppImage/Heroic-2.1.0.AppImage https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.1.0/Heroic-2.1.0.AppImage
+OBSSudio() {
+ echo "Installation de OBS Studio"
+flatpak install flathub com.obsproject.Studio
 }
 
+Kdenlive() {
+ echo "Installation de Kdenlive"
+flatpak install flathub org.kde.kdenlive
+}
+
+GtkStressTesting() {
+ echo "Installation de GtkStressTesting"
+flatpak install flathub com.leinardi.gst
+}
 
 echo "### installation complete"
-
-# auto select all
-for i in ${!progams[@]}; do
-    choices[i]="*"
-done
-
-menu() {
-    echo "Choisir les programmes à installer :"
-
-    for i in ${!progams[@]}; do
-        printf "%3d%s) %s\n" $((i+1)) "${choices[i]:- }" "${progams[i]}"
-    done
-    [[ "$msg" ]] && echo "$msg"; :
-}
-
-prompt="Choisir un programme (choisir à nouveau pour l'enlever, ENTREE quand ok) : "
-
-while menu && read -rp "$prompt" num && [[ "$num" ]]; do
-    [[ "$num" != *[![:digit:]]* ]] &&
-    (( num > 0 && num <= ${#progams[@]} )) ||
-    { msg="Option invalide : $num"; continue; }
-    ((num--));
-    [[ "${choices[num]}" ]] && choices[num]="" || choices[num]="*"
-done
-
-printf "Vous avez choisi"; msg=" quedalle."
-
-for i in ${!progams[@]}; do
-    [[ "${choices[i]}" ]] && { printf " %s" "${progams[i]}"; msg=""; }
-done
-
-echo "$msg"
-
-read -p "Installer (y/N)? " -n 1 -r
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    for i in ${!progams[@]}; do
-    option_noconfirm="true"
-        [[ "${choices[i]}" ]] && ${progams[i]}
-    done
-fi
