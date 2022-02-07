@@ -2,6 +2,11 @@
 
 set -e
 
+# automatic installation - use this with care and only if you know what you're doing
+# this question will answer every question pacman asks with the default answer - it may break your system
+option_noconfirm="true"
+
+
 #Depots flatapk
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak remote-add --if-not-exists --user flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
