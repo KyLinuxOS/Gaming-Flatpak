@@ -12,7 +12,6 @@ flatpak install org.gnome.Platform/x86_64/41 com.valvesoftware.Steam com.valveso
 
 #Lutris
 flatpak install --user flathub-beta net.lutris.Lutris//beta
-flatpak install --user flathub org.gnome.Platform.Compat.i386 org.freedesktop.Platform.GL32.default org.freedesktop.Platform.GL.default
 
 echo "### installation complete"
 
