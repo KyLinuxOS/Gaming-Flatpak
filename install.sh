@@ -10,10 +10,11 @@ option_noconfirm="true"
 #Depots flatapk
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak remote-add --if-not-exists --user flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-flatpak update --appstream
+#flatpak update --appstream
 
 #Dépendances
 flatpak install org.gnome.Platform/x86_64/41
+flatpak install --user flathub org.gnome.Platform.Compat.i386 org.freedesktop.Platform.GL32.default org.freedesktop.Platform.GL.default
 
 # program list
 
